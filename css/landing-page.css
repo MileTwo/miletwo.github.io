@@ -90,7 +90,9 @@ a {
     background: url(../img/road_scaled.jpg) no-repeat center center;
     background-size: cover;
 }
-
+.post-def{
+    background-color: #f8f8f8;
+}
 .intro-message {
     position: relative;
     padding-top: 20%;
