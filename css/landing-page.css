@@ -8,6 +8,7 @@ body,
 html {
     width: 100%;
     height: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 body,
@@ -17,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
@@ -57,7 +58,7 @@ li {
 
 .icon.rounded {
 		border-radius: 100%;
-		border: 1px solid black;
+		border: 1px solid #eefbe9;;
 		display: inline-block;
 		height: 2em;
 		line-height: 2em;
@@ -71,10 +72,24 @@ li {
 
 .topnav {
     font-size: 14px;
+    background: #254D32;
+}
+
+.navbar-default .navbar-brand {
+    color: #eefbe9;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    color: #eefbe9;
+    background-color: #eefbe9;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #eefbe9;
 }
 
 a {
-    color: #777;
+    color: #eefbe9;
 }
 
 .lead {
@@ -83,20 +98,20 @@ a {
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    color: #f8f8f8;
-    background: url(../img/road_scaled.jpg) no-repeat center center;
-    background-size: cover;
+    /*background: url(../img/road_scaled.jpg) no-repeat center center;
+    background-size: cover;*/
 }
 .post-def{
-    background-color: #f8f8f8;
+    background-color: #fcfffb;
 }
 .intro-message {
-    position: relative;
-    padding-top: 20%;
+    position: absolute;
+    padding-top: 10%;
     padding-bottom: 20%;
+    height: 25%;
 }
 
 .intro-message > h1 {
@@ -113,6 +128,7 @@ a {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    color: #eefbe9;
 }
 
 @media(max-width:767px) {
@@ -144,17 +160,22 @@ a {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
+    background: #fafff8;
+}
+.btn {
+    background: #fafff8;
 }
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #fcfffb;
 }
 
 .content-section-b {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+    background-color: #fcfffb;
 }
 
 .section-heading {
@@ -164,7 +185,7 @@ a {
 .section-heading-spacer {
     float: left;
     width: 200px;
-    border-top: 3px solid #e7e7e7;
+    border-top: 3px solid #dce8d7;
 }
 
 .section-heading-spacer-empty {
@@ -177,14 +198,15 @@ a {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/road_fall.jpg) no-repeat center center;
-    background-size: cover;
+    /*background: url(../img/road_fall.jpg) no-repeat center center;
+    background-size: cover;*/
 }
 
 .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
+    color: #eefbe9;
 }
 
 .banner ul {
@@ -223,9 +245,115 @@ a {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #254D32;
 }
 
 p.copyright {
     margin: 15px 0 0;
+    color: #eefbe9;
+}
+
+.address {
+    color: #eefbe9;
+}
+
+.blog {
+    color: #eefbe9;
+}
+
+
+
+.bgimg-0 {
+    background-image: url(../../img/road_scaled.jpg);
+    height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bgimg-1 {
+    background-image: url(../img/road_scaled.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.bgimg-2 {
+    background-image: url(../img/Laptop.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-3 {
+    background-image: url(../img/meeting.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-4 {
+    background-image: url(../img/whiteboard.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-5 {
+    background-image: url(../img/businessman.jpg);
+    min-height: 150%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-6 {
+    background-image: url(../img/meeting2.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-7 {
+    background-image: url(../img/road_fall.jpg);
+    min-height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    background-color: #254D32;
+    color: #eefbe9;
+}
+
+.intro-content {
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    color: #eefbe9;
+}
+
+.intro-content > h1 {
+    font-size: 48pt;
+}
+
+.intro-content > h3 {
+    font-size: 24pt;
 }
