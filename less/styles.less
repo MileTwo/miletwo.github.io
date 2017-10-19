@@ -1,236 +1,16 @@
-@import url('reset.less');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,300i,400,400i,600,600i,700,700i');
 
-// --------------------
-// Variables
-// --------------------
+@import 'reset';
 
-@color-hyperlink: #03A9F4;
-@color-hyperlink-hover: lighten(@color-hyperlink, 20%);
-@color-primary: #006747;
-@color-primary-light: #00A875;
-@color-primary-accent: #2CDBA5;
-@color-dark-1: #102027;
-@color-dark-2: #37474F;
-@color-light: #FAFDFF;
-@color-light-gray: #aab1b5;
-@color-accent: #E91E63;
+@import '_vars';
+@import '_mixins';
+@import '_grid';
+@import '_elements';
 
-@pad:30px;
-@row:120px;
-
-// --------------------
-// Mixins
-// --------------------
-
-.a-unstyled() {
-  color:inherit;
-  text-decoration:none;
-  &:hover {
-    color:inherit;
-  }
-}
-.font-main() {
-  font-family: 'Open Sans', sans-serif;
-}
-.font-main-thin() {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-.grid-col(@num) {
-  width: @num/12 * 100%;
-  box-sizing:border-box;
-  padding-left:@pad;
-  padding-right:@pad;
-}
-.generate-columns(@i) when (@i > 0) {
-  .g-@{i} {
-    .grid-col(12);
-    @media screen and (min-width:760px) {
-      .grid-col(@i);
-    }
-  }
-  .generate-columns(@i - 1);
-}
-.generate-rows(6);
-.generate-rows(@i) when (@i > 0) {
-  .r-@{i} {
-    min-height:@i * @row;
-  }
-  .generate-rows(@i - 1);
-}
-.transition(@duration:0.2s) {
-  transition:@duration all linear;
-}
-.ul-unstyled() {
-  margin-left:0;
-  & > li {
-    list-style:none;
-  }
-}
-.clearfix() {
-  &::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
-}
-
-
-/* --------------------
- * Element styles
- * -------------------- */
-
-a {
-  color:@color-hyperlink;
-  text-decoration:underline;
-  .transition;
-  &:hover {
-    color:@color-hyperlink-hover;
-  }
-  &.unstyled {
-    .a-unstyled;
-  }
-}
-
-b {
-  font-weight: 600;
-}
-
-body {
-  font-size:1.6rem;
-  font-weight:300;
-  line-height:2.4rem;
-  .font-main;
-  color:@color-dark-1;
-  background-color:@color-light;
-  padding:0;
-  box-sizing: border-box;
-  &.page-home {
-    background:center top no-repeat url(/img/masthead-image-1b.png);
-
-    main {
-      padding:0;
-      margin:0;
-      max-width:100%;
-    }
-
-    @media screen and (min-width:500px) {
-      padding-top: @row/2;
-    }
-    @media screen and (min-width:722px) {
-      padding-top: 2 * @row;
-    }
-  }
-  @media screen and (min-width:1200px) {
-    width:1200px;
-    margin:0 auto;
-  }
-}
-
-h1, .h1 {
-  .font-main;
-  font-size:2.8rem;
-  line-height: 3.2rem;
-  color:@color-primary-light;
-  font-weight:700;
-  margin-bottom:2.4rem;
-  margin-top:0;
-}
-
-h2, .h2 {
-  .font-main;
-  font-size:2.1rem;
-  line-height: 3.2rem;
-  color:@color-primary-light;
-  font-weight:700;
-  margin-bottom:2.4rem;
-  margin-top:3.2rem;
-}
-
-h3, .h3 {
-  .font-main;
-  font-size: 2.1rem;
-  line-height: 2.4rem;
-  color:@color-primary-light;
-  font-weight:700;
-  margin-top:2.4rem;
-  margin-bottom:1.4rem;
-}
-
-html {
-  font-size:10px;
-  background-color:@color-dark-2;
-}
-
-img {
-  max-width:100%;
-}
-
-main {
-  display:block;
-  padding:30px;
-  max-width:540px;
-  margin:0 auto;
-}
-
-p, .body-copy {
-  margin-bottom:1.6rem;
-  font-weight:300;
-}
-
-strong {
-  font-weight:700;
-}
-
-ul {
-  margin-left:30px;
-  margin-bottom:2.4rem;
-
-  li {
-    list-style:disc;
-    font-weight:300;
-  }
-  &.unstyled {
-    .ul-unstyled;
-  }
-}
-
-/* --------------------
- * Grid
- * -------------------- */
-
-.grid {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-.generate-columns(12);
-.g-centered {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* --------------------
  * BEM
  * -------------------- */
-
-
-.blog {
-  .blog__img {
-    margin-bottom:24px;
-  }
-  .blog__title {
-    .h1;
-    margin-bottom:1.6rem;
-  }
-  .blog__meta {
-    font-style:italic;
-    color:@color-primary-light;
-    margin-bottom:3.2rem;
-  }
-}
 
 .blog-short {
   .clearfix;
@@ -584,6 +364,56 @@ footer, .footer {
   }
 }
 
+.page--blog {
+  .blog__img {
+    margin-bottom:24px;
+  }
+  .blog__title {
+    .h1;
+    margin-bottom:1.6rem;
+  }
+  .blog__meta {
+    font-style:italic;
+    color:@color-primary-light;
+    margin-bottom:3.2rem;
+  }
+}
+
+.page--home {
+  background:center top no-repeat url(/img/masthead-image-1b.png);
+  
+  main {
+    padding:0;
+    margin:0;
+    max-width:100%;
+  }
+
+  @media screen and (min-width:500px) {
+    padding-top: @row/2;
+  }
+  @media screen and (min-width:722px) {
+    padding-top: 2 * @row;
+  }
+}
+
+.page--person {
+  color: @color-dark-1;
+
+  .person__name {
+    margin-bottom: 0;
+  }
+  .person__title {
+    font-style: italic;
+  }
+
+  .person__img {
+    float:right;
+    margin: 0 0 15px 15px;
+    max-width: 50%;
+    .clearfix;
+  }
+}
+
 
 .persons {
   width: 100%;
@@ -602,15 +432,13 @@ footer, .footer {
   padding: 0 20px;
   min-width: 200px;
   text-align: center;
-  color: #ECEFF1;
+  color: @color-light;
   list-style: none;
-  img {
-    margin: 0 auto;
-  }
-  .person__name {
-    display: block;
-  }
-  .person__title {
-    display: block;
+  img { margin: 0 auto; }
+  .person__name { display: block; }
+  .person__title { display: block; }
+  a {
+    color: @color-light;
+    text-decoration: none;
   }
 }

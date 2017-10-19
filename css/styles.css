@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,300i,400,400i,600,600i,700,700i');
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,300i,400,400i,600,600i,700,700i');
 html,
 body,
 div,
@@ -144,126 +144,6 @@ table {
 }
 .r-1 {
   min-height: 120px;
-}
-/* --------------------
- * Element styles
- * -------------------- */
-a {
-  color: #03A9F4;
-  text-decoration: underline;
-  transition: 0.2s all linear;
-}
-a:hover {
-  color: #60ccfd;
-}
-a.unstyled {
-  color: inherit;
-  text-decoration: none;
-}
-a.unstyled:hover {
-  color: inherit;
-}
-b {
-  font-weight: 600;
-}
-body {
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 2.4rem;
-  font-family: 'Open Sans', sans-serif;
-  color: #102027;
-  background-color: #FAFDFF;
-  padding: 0;
-  box-sizing: border-box;
-}
-body.page-home {
-  background: center top no-repeat url(/img/masthead-image-1b.png);
-}
-body.page-home main {
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
-}
-@media screen and (min-width: 500px) {
-  body.page-home {
-    padding-top: 60px;
-  }
-}
-@media screen and (min-width: 722px) {
-  body.page-home {
-    padding-top: 240px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  body {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-h1,
-.h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.8rem;
-  line-height: 3.2rem;
-  color: #00A875;
-  font-weight: 700;
-  margin-bottom: 2.4rem;
-  margin-top: 0;
-}
-h2,
-.h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.1rem;
-  line-height: 3.2rem;
-  color: #00A875;
-  font-weight: 700;
-  margin-bottom: 2.4rem;
-  margin-top: 3.2rem;
-}
-h3,
-.h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.1rem;
-  line-height: 2.4rem;
-  color: #00A875;
-  font-weight: 700;
-  margin-top: 2.4rem;
-  margin-bottom: 1.4rem;
-}
-html {
-  font-size: 10px;
-  background-color: #37474F;
-}
-img {
-  max-width: 100%;
-}
-main {
-  display: block;
-  padding: 30px;
-  max-width: 540px;
-  margin: 0 auto;
-}
-p,
-.body-copy {
-  margin-bottom: 1.6rem;
-  font-weight: 300;
-}
-strong {
-  font-weight: 700;
-}
-ul {
-  margin-left: 30px;
-  margin-bottom: 2.4rem;
-}
-ul li {
-  list-style: disc;
-  font-weight: 300;
-}
-ul.unstyled {
-  margin-left: 0;
-}
-ul.unstyled > li {
-  list-style: none;
 }
 /* --------------------
  * Grid
@@ -448,12 +328,44 @@ ul.unstyled > li {
   margin-right: auto;
 }
 /* --------------------
- * BEM
+ * Element styles
  * -------------------- */
-.blog .blog__img {
-  margin-bottom: 24px;
+a {
+  color: #03A9F4;
+  text-decoration: underline;
+  transition: 0.2s all linear;
 }
-.blog .blog__title {
+a:hover {
+  color: #60ccfd;
+}
+a.unstyled {
+  color: inherit;
+  text-decoration: none;
+}
+a.unstyled:hover {
+  color: inherit;
+}
+b {
+  font-weight: 600;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #102027;
+  background-color: #FAFDFF;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+h1,
+.h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.8rem;
   line-height: 3.2rem;
@@ -461,13 +373,70 @@ ul.unstyled > li {
   font-weight: 700;
   margin-bottom: 2.4rem;
   margin-top: 0;
-  margin-bottom: 1.6rem;
 }
-.blog .blog__meta {
-  font-style: italic;
+h2,
+.h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
   color: #00A875;
-  margin-bottom: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  margin-top: 3.2rem;
 }
+h3,
+.h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+  color: #00A875;
+  font-weight: 700;
+  margin-top: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+html {
+  font-size: 10px;
+  background-color: #37474F;
+}
+img {
+  max-width: 100%;
+}
+.page {
+  display: block;
+  padding: 30px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.page::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+p,
+.body-copy {
+  margin-bottom: 1.6rem;
+  font-weight: 300;
+}
+strong {
+  font-weight: 700;
+}
+ul {
+  margin-left: 30px;
+  margin-bottom: 2.4rem;
+}
+ul li {
+  list-style: disc;
+  font-weight: 300;
+}
+ul.unstyled {
+  margin-left: 0;
+}
+ul.unstyled > li {
+  list-style: none;
+}
+/* --------------------
+ * BEM
+ * -------------------- */
 .blog-short {
   margin-bottom: 24px;
 }
@@ -873,6 +842,61 @@ footer .footer__address,
   height: 100px;
   width: 82px;
 }
+.page--blog .blog__img {
+  margin-bottom: 24px;
+}
+.page--blog .blog__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  color: #00A875;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+.page--blog .blog__meta {
+  font-style: italic;
+  color: #00A875;
+  margin-bottom: 3.2rem;
+}
+.page--home {
+  background: center top no-repeat url(/img/masthead-image-1b.png);
+}
+.page--home main {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+@media screen and (min-width: 500px) {
+  .page--home {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 722px) {
+  .page--home {
+    padding-top: 240px;
+  }
+}
+.page--person {
+  color: #102027;
+}
+.page--person .person__name {
+  margin-bottom: 0;
+}
+.page--person .person__title {
+  font-style: italic;
+}
+.page--person .person__img {
+  float: right;
+  margin: 0 0 15px 15px;
+  max-width: 50%;
+}
+.page--person .person__img::after {
+  display: block;
+  content: "";
+  clear: both;
+}
 .persons {
   width: 100%;
   box-sizing: border-box;
@@ -892,7 +916,7 @@ footer .footer__address,
   padding: 0 20px;
   min-width: 200px;
   text-align: center;
-  color: #ECEFF1;
+  color: #FAFDFF;
   list-style: none;
 }
 .person img {
@@ -903,5 +927,9 @@ footer .footer__address,
 }
 .person .person__title {
   display: block;
+}
+.person a {
+  color: #FAFDFF;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
