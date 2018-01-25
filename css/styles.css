@@ -842,8 +842,13 @@ footer .footer__address,
   height: 100px;
   width: 82px;
 }
+.page--blog {
+  max-width: 80%;
+}
 .page--blog .blog__img {
-  margin-bottom: 24px;
+  display: block;
+  margin: 0 auto 24px auto;
+  max-width: 50%;
 }
 .page--blog .blog__title {
   font-family: 'Open Sans', sans-serif;
@@ -859,6 +864,35 @@ footer .footer__address,
   font-style: italic;
   color: #00A875;
   margin-bottom: 3.2rem;
+}
+.page--blog .intern-container {
+  display: inline-flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+}
+.page--blog .intern-container .intern-container--image {
+  height: 15em;
+  margin: 1em;
+}
+.page--blog .intern-container .intern-container--body_heading-right {
+  float: right;
+}
+.page--blog .closing-statement {
+  margin: 1em 0;
+}
+@media screen and (max-width: 768px) {
+  .page--blog .blog__img {
+    display: block;
+    margin: 0 auto 24px auto;
+    max-width: 100%;
+  }
+  .page--blog .intern-container {
+    display: block;
+  }
+  .page--blog .intern-container .intern-container--image {
+    height: 15em;
+    margin: 1em;
+  }
 }
 .page--home {
   background: center top no-repeat url(/img/masthead-image-1b.png);
