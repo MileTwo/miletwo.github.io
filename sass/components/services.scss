@@ -1,0 +1,94 @@
+.content {
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+  }
+
+  .services_body {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    .svg {
+      width: 100%;
+
+      .svg_top_left {
+        display: block;
+        float: left;
+        position: absolute;
+        width: 30%;
+
+        @include media($tablet) {
+          width: 30%;
+        }
+        @include media($desktop) {
+          width: 30%;
+        }
+      }
+
+      .svg_middle_right {
+        display: block;
+        float: right;
+        width: 20%;
+
+        @include media($tablet) {
+          width: 12%;
+        }
+        @include media($desktop) {
+          width: 12%;
+        }
+      }
+
+      .svg_bottom_left {
+        display: block;
+        float: left;
+        width: 100%;
+
+        @include media($tablet) {
+          width: 50%;
+        }
+        @include media($desktop) {
+          width: 50%;
+        }
+      }
+    }
+
+    .processes {
+      // max-width: 80%;
+      margin: auto;
+      text-align: left;
+      padding: 0 1rem 3rem 1rem;
+      @include media($tablet) {
+        max-width: 60%;
+      }
+      @include media($desktop) {
+        max-width: 60%;
+      }
+    }
+
+    h1 {
+      color: $clr-drk-blue;
+      margin: 0;
+      padding: 1em;
+      position: relative;
+      text-align: center;
+    }
+
+    h2 {
+      color: $clr-drk-blue;
+      margin: 0;
+      padding: 0 1rem 0 1rem;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 1rem 2rem 1rem;
+    }
+
+    img {
+      max-width: 80%;
+    }
+  }
+}
