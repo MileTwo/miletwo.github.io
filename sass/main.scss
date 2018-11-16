@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+// Libraries
+@import 'normalize.css/normalize';
+@import 'bourbon/core/bourbon';
+@import 'bourbon-neat/app/assets/stylesheets/neat';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+//@import 'node_modules/slick-carousel/slick/slick-theme.scss';
+
+
+// Defaults
+@import 'defaults/breakpoints';
+@import 'defaults/colors';
+@import 'defaults/tags';
+@import 'defaults/typography';
+
+
+// Components
+@import 'components/content';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/team';
+@import 'components/person';
+@import 'components/work';
+@import 'components/services';
+@import 'components/navigation';
+@import 'components/teamSliderComp';
+@import 'components/case';
+@import 'components/servicesComp';
+@import 'components/workComp';
+@import 'components/teamComp';
+@import 'components/valuesComp';
+@import 'components/specsComp';
+@import 'components/caseBodyComp';
+@import 'components/nextProjectComp';
+
+// Pages
+@import 'layouts/front';
+// @import 'layouts/nav';
