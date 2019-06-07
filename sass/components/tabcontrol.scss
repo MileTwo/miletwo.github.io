@@ -1,0 +1,31 @@
+.tab {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab button {
+    float: left;
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.3s;
+    margin: 0 1em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #848484;
+
+}
+
+.tab button:hover {
+    color: $clr-drk-blue;
+}
+
+.tab button.active {
+    color: $clr-drk-blue;
+}
+
+.tabcontent {
+    display: none;
+}
