@@ -1,0 +1,88 @@
+// Header component on the front page
+header {
+    background-color: $clr-white;
+    box-shadow: 0 5px 12px -10px #9696968c;
+    display: flex;
+    height: 75px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 21;
+
+    .logo {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        padding: 0 1.0em;
+
+        @include desktop {
+            padding: 0 6.0rem;
+        }
+
+        svg {
+            fill: $clr-drk-green;
+            height: 60px;
+            width: 75px;
+        }
+
+        a {
+            align-items: center;
+            display: flex;
+            margin: 0;
+        }
+    }
+
+    #nav_hamburger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 1.0em;
+        width: 40px;
+        z-index: 2;
+
+        @include desktop {
+            display: none;
+        }
+
+        .bar {
+            width: 40px;
+            height: 4px;
+            margin: 6px 0;
+            border-radius: 50px;
+            background-color: $clr-drk-green;
+            transition: all ease-in-out 200ms;
+        }
+
+        // Default three lines hamburger menu
+        .bar_top {
+            top: 0px;
+        }
+
+        .bar_middle {
+            top: 18px;
+        }
+
+        .bar_bottom {
+            top: 36px;
+        }
+    }
+
+    .nav_hamburger-close {
+
+        // X close button by hidding the middle bar and rotating the top & bottom bars
+        .bar_top {
+            background: $clr-drk-green;
+            transform: rotate(45deg) translate(8px, 7px);
+        }
+
+        .bar_middle {
+            opacity: 0;
+            transition: all ease-in-out 200ms;
+        }
+
+        .bar_bottom {
+            background: $clr-drk-green;
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+    }
+}
