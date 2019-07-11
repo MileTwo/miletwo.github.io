@@ -1,0 +1,17 @@
+
+.job-list{
+            list-style-type: circle;
+}
+.job-list a {
+    font-weight: normal;
+    color: $clr-md-blue;
+
+}
+
+.job-list a:hover {
+    color: $clr-drk-blue;
+}
+
+.job-list a.active {
+    color: $clr-drk-blue;
+}
