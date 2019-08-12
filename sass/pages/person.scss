@@ -1,0 +1,126 @@
+.person {
+
+    .person_nav {
+        padding: 2.0em 0 0 1.0em;
+    }
+
+    .person_details {
+        display: flex;
+        flex-direction: column;
+        min-height: 256px;
+
+        @include desktop {
+            flex-direction: row;
+            //min-height: 512px;
+        }
+
+        .person_image {
+            align-items: flex-end;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            order: 2;
+
+            @include desktop {
+                background-color: $clr-white;
+                background-image: none;
+                border-bottom: 0;
+                padding-top: 1.0em;
+                width: 40%;
+                order: 1;
+            }
+
+            img {
+                // margin-bottom: -75px;
+                // margin-right: 150px;
+                 max-width: 95%;
+                // max-height: 300px;
+                // min-height: auto;
+                // min-width: 100%;
+                // width: 100%;
+                // height: auto;
+
+                @include desktop {
+                    max-width: 600px;
+                    max-height: 600px;
+                }
+            }
+        }
+
+        .person_bio {
+            flex: 1;
+            padding: 1.0em;
+            max-width: 768px;
+            width: 100%;
+            order: 1;
+
+            @include desktop {
+                width: 60%;
+                order: 2;
+            }
+
+            .person_title {
+                color: $clr-drk-blue;
+                font-size: 1.2em;
+            }
+
+            h2 {
+                color: $clr-drk-blue;
+                display: inline-block;
+                margin: 0;
+                margin-left: -1.0em;
+                padding-left: 1.0em;
+                padding-right: 1.0em;
+            }
+
+            p {
+                color: $clr-gray-40;
+                font-size: 1em;
+                margin-right: 1.0em;
+                padding: 0 1.0em 0 0;
+            }
+        }
+    }
+
+    .person_footer {
+      //  background: $clr-drk-green url("/img/shapes_pattern.png") bottom center no-repeat;
+        display: flex;
+        height: 75px;
+
+        .person_footer-gutter {
+            display: none;
+            width: 40%;
+
+            @include desktop {
+                display: inline-block;
+            }
+        }
+
+        .person_footer-social {
+            //align-items: center;
+            display: flex;
+          //  margin-left: auto;
+
+            @include desktop {
+              //  align-items: center;
+                display: flex;
+                //padding-left: 1.15em;
+                width: 60%;
+            }
+
+            a {
+                height: auto;
+            }
+
+            a.fa svg {
+                //Sprite Icons
+                fill: $clr-drk-green;
+                width: 48px;
+                height: 48px;
+                margin: auto;
+                vertical-align: top;
+                padding: 0.5em 0.5em 0.5rem 0;
+            }
+        }
+    }
+}
