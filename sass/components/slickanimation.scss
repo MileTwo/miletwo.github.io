@@ -1,0 +1,83 @@
+//Base Styles
+
+.revealOnScroll {
+    opacity: 0;
+}
+
+.slick-slide {
+    &:focus {
+        outline: none;
+    }
+}
+
+.slick-dots {
+    color: $clr-gray-15;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-position: inside;
+
+    .slick-active {
+        color: $clr-gray-90;
+    }
+
+    li {
+        padding-left: .5rem;
+        cursor: pointer;
+
+        //makes button invisible if JS is not enabled
+        button {
+            outline: none;
+            background-color: transparent;
+            border: none;
+            color: transparent;
+            opacity: 1;
+        }
+    }
+}
+
+//come in animation
+
+.come-in {
+    transform: translateY(200px);
+    animation: come-in 500ms ease forwards;
+    opacity: 0;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+    /* So they look staggered */
+}
+
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+
+.animation-element {
+}
+
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.svg_B {
+
+    .svg_bottom {
+        margin: 0;
+        padding: 0;
+        vertical-align: bottom;
+    }
+}
