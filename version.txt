@@ -1,0 +1,12 @@
+
+Mile Two Website
+===========================
+Name: www.miletwo.com
+Description: Mile Two LLC
+URL: https://gitlab.com/mile-two/www.miletwo.us
+Version: 1.0.0
+Git Branch: HEAD
+Git Revision: 1bc530d52d2345cf091b2dd5412d220392719afc
+Build Time: 2020-04-02 12:16:43
+Build Host: runner-nyyofasy-project-6269694-concurrent-0kdmrv [linux]
+
