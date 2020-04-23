@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+// Libraries
+@import 'normalize.css/normalize';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+
+
+// Defaults
+@import 'defaults/devices';
+@import 'defaults/colors';
+@import 'defaults/tags';
+@import 'defaults/typography';
+
+
+// Components
+@import 'components/button';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/header-navbar';
+@import 'components/header-sidenav';
+@import 'components/slickanimation';
+@import 'components/team';
+@import 'components/tabcontrol';
+@import 'components/joblist';
+
+//
+// 7. Layout
+// --------------------------------------------------
+@import 'layouts/l-jobs';
+@import 'layouts/l-posts';
+
+
+// Pages
+@import 'pages/page'; // base styles for all pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/person';
+@import 'pages/services';
+@import 'pages/work';
+@import 'pages/join';
+@import 'pages/expertise';
+
+// Includes
+@import 'includes/video-embed'; // base styles for all pages
