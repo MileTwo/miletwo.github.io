@@ -1,0 +1,46 @@
+
+footer {
+    background-color: $clr-drk-blue;
+    color: $clr-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3.0em 1.0em;
+    font-size: 16px;
+
+    @include desktop {
+        flex-direction: row;
+    }
+
+
+    .logo {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+
+        svg {
+            fill: $clr-white;
+            margin-bottom: 2.0em;
+        }
+    }
+
+    .footer_text {
+        flex: 1;
+        padding: 0;
+
+        p {
+            margin: 0 1.0em 1.0em 0;
+        }
+
+        .social-icons {
+            a.fa svg {
+                fill: $clr-white;
+                height: 36px;
+                margin: auto;
+                padding: 0.5em 1.0em 0 0;
+                width: 36px;
+            }
+        }
+    }
+}

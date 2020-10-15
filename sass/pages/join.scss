@@ -1,0 +1,107 @@
+.opportunities {
+    background-color: $clr-gray-95;
+
+    .page-openings {
+        margin: 2em auto 0 auto;
+
+        h3 {
+            color: $clr-drk-blue;
+        }
+      }
+
+        .job-openings{
+          display: flex;
+          width: 100%;
+          margin: auto;
+          flex-direction: column;
+          text-align: left;
+    }
+
+    .page-openings-support,
+    .page-openings-bring {
+
+        height: auto;
+
+        .info-list {
+            display: flex;
+            width: 70%;
+            margin: auto;
+            flex-direction: column;
+            list-style-type: circle;
+            text-align: left;
+
+            li {
+                flex: 1;
+                margin: auto 0;
+                padding: 0;
+                font-size: 18px;
+                color: #016848;
+                color: $clr-drk-green;
+
+                span {
+                    color: $clr-drk-blue;
+                }
+            }
+        }
+    }
+
+    .page-subtitle {
+        color: $clr-drk-blue;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.benefits {
+    background-color: $clr-drk-blue;
+
+    .heading {
+        color: $clr-white;
+
+        &::before,
+        &::after {
+            border-top: 1px solid $clr-white;
+        }
+    }
+
+    .benefits-list {
+        list-style-type: circle;
+        display: block;
+        margin: a auto;
+        width: 90%;
+        text-align: left;
+        margin: auto;
+
+        @include desktop {
+            width: 50%;
+        }
+
+        li {
+            color: $clr-light-green;
+
+            span {
+                color: $clr-white;
+            }
+        }
+    }
+
+    h1,
+    p,
+    li {
+        color: $clr-white;
+    }
+}
+
+.internship {
+    background-color: $clr-gray-95;
+}
+
+.opportunities,
+.benefits,
+.internship {
+    padding: 1em 0;
+
+    .heading {
+        font-weight: 100;
+    }
+}
