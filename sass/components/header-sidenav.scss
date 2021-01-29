@@ -1,0 +1,52 @@
+.sidenav {
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $clr-white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: right;
+    white-space: nowrap;
+
+    .horizontal_divider {
+        display: block;
+        height: 1px;
+        width: 88%;
+        margin: 0 0 1em auto;
+        background-color: $clr-gray-90;
+    }
+
+    .logo {
+        height: 75px;
+        padding: 0 2.0rem;
+    }
+
+    a {
+        padding: 1rem;
+        color: $clr-gray-50;
+        display: block;
+        font-size: 1.5rem;
+        transition: 0.3s;
+        text-decoration: none;
+        text-transform: uppercase;
+        visibility: hidden;
+
+        &:hover, &:active {
+            color: $clr-gray-40;
+        }
+    }
+}
+
+.sidenav_slideIn {
+    width: 100%;
+    a {
+        visibility: visible;
+    }
+}
+
+.sidenav_slideOut {
+    width: 0;
+}
