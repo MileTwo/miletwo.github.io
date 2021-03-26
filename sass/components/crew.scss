@@ -1,0 +1,117 @@
+//Grid page for the crew
+
+.crew{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+grid-row-gap: 1.25em;
+
+
+}
+.crewMember img{
+  padding: 0;
+}
+
+
+
+@media screen and (min-width: 576px) {
+
+
+
+  .crew {
+
+	  grid-template-columns: 1fr 1fr;
+    grid-column-gap: .5em;
+
+}
+
+.crewMember img{
+  padding: 0;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+
+
+  .crew {
+
+	  grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: .5em;
+
+}
+.crewMember img{
+  padding: 0;
+}
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+
+
+  .crew {
+
+	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: .5em;
+
+}
+.crewMember img{
+  padding: 0;
+}
+}
+
+
+
+.crew{
+
+  color: #696969;
+
+  img{
+    max-width: 100%;
+    height: auto;
+
+  }
+
+.crew_details{
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 1.25em;
+}
+
+h3{
+  font-size: 20px;
+  margin: 0;
+  color: #016848;
+}
+
+h3+p{
+  margin-top: 0;
+}
+
+.social_links {
+  border-top: 1px solid #016848;
+  padding-top: 8px;
+  height: 32px;
+
+
+}
+
+.social_links a {
+    height: auto;
+    color: #016848;
+}
+
+.social_links a.fa svg {
+    fill: #016848;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    vertical-align: top;
+    padding: .15em;
+}
+
+
+}
